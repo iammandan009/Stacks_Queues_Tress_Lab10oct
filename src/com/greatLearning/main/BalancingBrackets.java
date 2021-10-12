@@ -35,17 +35,17 @@ public class BalancingBrackets
 				   {
 			         case ')':
 			             check = stack.pop();
-			        	 if(check == '}'|| check==']')
+			        	 if(check == '{'|| check=='[')
 			        	    return false;  
 			        			 break;
 			         case '}':
 			             check = stack.pop();
-			        	 if(check == ')'|| check==']')
+			        	 if(check == '('|| check=='[')
 			        	    return false;  
 			        			 break;	
 			         case ']':
 			             check = stack.pop();
-			        	 if(check == '}'|| check==')')
+			        	 if(check == '{'|| check=='(')
 			        	    return false;  
 			        			 break;			 
 			         
